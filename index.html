@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo website 👉👈</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hearts">
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>🤍</span>
+    <span>💗</span>
+    <span>💞</span>
+</div>
+    <nav>
+    <div class="logo">
+        🤍
+    </div>
+    <ul>
+        <li><a href="#">Story</a></li>
+        <li><a href="#">gallery>Memories</a></li>
+        <li><a href="#">letter>Letter</a></li>
+    </ul>
+</nav>
+<div id="intro-screen">
+    <div class="intro-content">
+        <div class="headphone">🎧</div>
+        <h1>Before We Begin...</h1>
+        <p>
+            This isn't just a birthday website.
+            <br><br>
+            It's a small journey I made with love,
+            only for you di my dear pondati🥹💋💎.
+            <br><br>
+            Please wear your headphones
+            for the best experience.
+        </p>
+        <button id="startBtn" onclick="startJourney()">
+            I'm Ready ✨
+        </button>
+    </div>
+</div>
+<div id="loading-screen">
+    <h1>✨</h1>
+    <h2>Loading Memories...</h2>
+    <div class="loader"></div>
+</div>
+    <div class="stars"></div>
+    <div class="moon"></div>
+    <div class="hero scene active">
+        <h1>Happy Birthday 🥳🤍💋</h1>
+        <h2>To My Most beautiful Girl in the universe 🌙🌸🧿✨</h2>
+        <p>
+            Every love story has a beginning......
+            Ours started with a simple hello...
+            and slowly became my favorite chapter in life.
+        </p>
+        <p>
+            <em>"என் வாழ்க்கையில் வந்த மிக அழகான பரிசு... நீதான்🥹🫂"</em>
+        </p>
+        <button onclick="showScene('.hero','#story')">
+            Enter Our Little World ✨
+        </button>
+        <div class="scroll-down">
+         ↓
+    </div>
+    </div>
+        <section id="story" class="story scene">
+        <span class="chapter">Chapter One</span>
+        <h1>🥰 Our Story Begins</h1>
+        <p>
+            Every beautiful story starts with a simple moment.
+        </p>
+        <blockquote>
+            Oru Naal Naan Unakku Msg pannen..........
+            Appo start Aachu namma love life journey.....
+            namma love journey ey oru diffrent rollercoster ride maaritha iruthuchu😂😂😂 
+            first firend ah iruthom appove seriyana sanda varum ana athula namma thandi vandhom 
+            after oru periya gap namma kulla vandhuchu athutha our journey oda next step nu therinchhu
+            antha gap la nee miss you solla start panna ellame nadanthuchu again namakulla sanda vandhuchu
+            finally.......God oru chance kudutharu namma seranum nu love you nu sonna 🥹💋🫂
+            ana appo neeyum naanum olunga purijukala misunderstanding la neraya sanda varum athunalye 
+            namakulla breakup aachu ana athu breakup illanu realise agave namakku oru six months pogiruchu😂😭
+            again namma love start aachu its special like theriyala ana unkuda vaalanum pavi..🧿🫂😭 unna maari oru ponna 
+            naa paathathu illa nee tha nenachukura ana nee alagu avalo alagu theriyumah venmaiyana manasu 
+            kozhathai pola adampudikurathu sweetsoul i never ever seen ipadi oru ponna alagi....i love you my dear pondati🥹💋💎
+
+        </blockquote>
+<button onclick="showScene('#story','#gallery')">
+    Continue ❤️
+</button>
+</section>
+<section id="gallery" class="gallery scene">
+    <h1>Our Beautiful cute moments 💕</h1>
+    <div class="gallery-container">
+        <img src="images/photo1.jpg.jpeg">
+        <img src="images/photo2.jpg.jpeg">
+        <img src="images/photo3.jpg.jpeg">
+        <img src="images/photo4.jpg.jpeg">
+        <img src="images/photo5.jpg.jpeg">
+        <img src="images/photo6.jpg.jpeg">
+        <img src="images/photo7.jpg.jpeg">
+        <img src="images/photo8.jpg.jpeg">
+    </div>
+<button onclick="showScene('#gallery','#quiz')">
+    Next 😜
+</button>
+</section>
+<section id="quiz" class="quiz scene">
+    <h1>💕 Before Your Surprise...</h1>
+    <p>Let's see how well you know us! 😜</p>
+    <div class="quiz-box">
+        <h2>Where did we first meet?</h2>
+        <button onclick="checkAnswer(true)">Instagram ❤️</button>
+        <button onclick="checkAnswer(false)">WhatsApp</button>
+        <button onclick="checkAnswer(false)">College</button>
+    </div>
+</section>
+<section id="envelope" class="scene">
+<div class="envelope-box">
+    <div class="envelope" onclick="openEnvelope()">
+        <div class="flap"></div>
+        <div class="paper">
+            ❤️
+        </div>
+    </div>
+    <h2>You unlocked something special... 🥳💌</h2>
+    <p>
+        Click the envelope to open your letter.
+    </p>
+</div>
+</section>
+<section id="letter" class="letter scene">
+    <div class="letter-box">
+        <h1>💌 A Letter To My Love</h1>
+        <p id="typing">
+            Happy Birthday, my dear wife baby 💋🥰
+            <br><br>
+            Thank you for coming into my life.
+            Every smile of yours makes my world brighter.
+            Every moment with you has become my favourite memory.
+            and neetha ammu enakku ellame alagi chello my mom dad friend......🧐 illa you're my best bestest friend everything🧿✨
+            <br><br>
+            I promise to stand beside you,
+            support you,
+            respect you,
+            and love you with all my heart.
+            <br><br>
+            Once again...
+            <br><br>
+            ❤️ Happy Birthday, My Love,my alagi,my kozhathai,my home,my 11:11 wish ❤️
+        </p>
+    </div>
+<button onclick="showScene('#letter','#birthday')">
+    One Last Surprise 🎁
+</button>
+</section>
+<section id="birthday" class="birthday scene">
+    <h1 class="birthday-title">
+        Happy Birthday..........
+    </h1>
+    <h2>
+        My Dear Pondati 🥹💋
+    </h2>
+    <p>
+        Today is all about you.
+        Thank you for making my life beautiful.
+        you're my soulmate and everything🧿✨
+    </p>
+<button onclick="showScene('#birthday','#lantern')">
+    Release The Lanterns 🏮
+</button>
+</section>
+<section id="lantern" class="scene">
+<div class="lantern-container">
+    <div class="lantern"></div>
+    <div class="lantern"></div>
+    <div class="lantern"></div>
+    <div class="lantern"></div>
+    <div class="lantern"></div>
+    <div class="lantern"></div>
+    <div class="lantern"></div>
+    <div class="lantern"></div>
+</div>
+    <div class="lantern-message">
+        <h1>🏮</h1>
+        <h2>Every Lantern Carries A Wish...</h2>
+        <p>
+            I pray fills your life with happiness,
+            protects you from every sadness,
+            and makes all your dreams come true. 💕🫂
+        </p>
+<button onclick="showScene('#lantern','#fireworks')">
+     Surprise 🎆
+</button>
+    </div>
+</section>
+<section id="fireworks" class="scene">
+    <div class="fireworks-container">
+        <span class="firework"></span>
+        <span class="firework"></span>
+        <span class="firework"></span>
+        <span class="firework"></span>
+        <span class="firework"></span>
+    </div>
+    <div class="final-message">
+        <h1>🎆 Happy Birthday 🎆</h1>
+        <h2>My Dear Pondati ❤️</h2>
+        <p>
+            Thank you for entering my life.
+            <br><br>
+            I don't know what the future holds,
+            but I know one thing...
+            <br><br>
+            I want every birthday of yours
+            to be celebrated with me beside you.
+            <br><br>
+            I Love You Forever. ❤️
+        </p>
+        <h3>✨ Our Forever Begins... ✨</h3>
+<button onclick="showScene('#fireworks','#final-video')">
+    One Last Surprise ❤️
+</button>
+    </div>
+</section><section id="final-video" class="scene">
+    <h2>One Last Surprise ❤️</h2>
+    <video id="birthdayVideo" controls>
+    <source src="videos/birthday.mp4" type="video/mp4">
+</video>
+</section>
+    <script src="script.js"></script>
+<audio id="bgMusic" loop>
+    <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+</body>
